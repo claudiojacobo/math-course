@@ -1,0 +1,16 @@
+# Homework 1 {.centered-title}
+
+::: {.content-hidden}
+{{< include ../_macros.qmd >}}
+:::
+
+{{< include _homework-header.qmd >}}
+
+::: {#exr-rational-point-on-sphere} 
+In classical geometry, we often parameterize curves using basic arithmetic. Use @exr-hypotenuse-calculation to determine a rational point on the Euclidean circle (a "1-face")
+$$
+    \Tb \coloneqq \{ (x,y) \in \Ab^2 \mid x^2 + y^2 = 1 \}.
+$$
+:::
+
+*Note*: Next week, we will see why this parameterization fails when $\Tb$ is replaced by the boundary of a 2-dimensional hypersquare!

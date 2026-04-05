@@ -1,0 +1,7 @@
+project:
+  output-dir: _accessible
+
+format:
+  html:
+    axe:
+      output: document

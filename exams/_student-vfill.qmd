@@ -1,0 +1,5 @@
+::: {.content-visible unless-profile="instructor" when-format="pdf"}
+```{=latex}
+    \vspace{2in}
+```
+:::

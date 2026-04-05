@@ -1,0 +1,71 @@
+project:
+  type: book
+  output-dir: _site
+
+book:
+  title: "Math 401"
+  subtitle: "Non-Riemannian Hypersquares"
+  author: "Claudio Gómez-Gonzáles"
+  chapters:
+    - index.qmd
+    - part: "Preliminaries"
+      chapters:
+        - notes/polytopes.qmd
+    - part: "Non-Riemannian Polytopes"
+      chapters:
+        - notes/hypersquare-geometry.qmd
+    - references.qmd
+  appendices:
+    - syllabus/main.qmd
+    - part: "Homework"
+      contents:
+        - homework/hw-0.qmd
+        - homework/hw-1.qmd
+    - part: "Practice Exams"
+      contents:
+        - exams/practice-1.qmd
+  favicon: favicon.ico
+  downloads: [pdf]
+  sidebar:
+      collapse-level: 1
+  page-footer:
+    left: "Claudio Gómez-Gonzáles"
+    right:
+      - icon: globe
+      - href: "https://cjgg.me/"
+
+bibliography: references.bib
+
+format:
+  html:
+    toc: true
+    toc-depth: 4
+    number-depth: 1
+    html-math-method: mathjax
+    respect-user-color-scheme: false
+    theme:
+      dark: darkly
+      light: flatly
+    css: styles.css
+  pdf:
+    toc-depth: 2
+    documentclass: report
+    include-in-header:
+      text: |
+        \usepackage{style}
+        \let\oldappendix\appendix
+        \renewcommand{\appendix}{
+          \oldappendix
+          \part*{Appendices}
+        }
+    geometry:
+      - margin = 1in
+    fontsize: 11pt
+    colorlinks: true
+    linkcolor: RoyalBlue
+    urlcolor: FireBrick
+    citecolor: ForestGreen
+
+filters:
+  - auto-numbering.lua
+  - centered-title.lua

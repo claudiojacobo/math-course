@@ -1,0 +1,16 @@
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \clearpage
+    \thispagestyle{empty}
+    \begin{center}
+    {\small \textbf{This page is intentionally left (nearly) blank to accommodate work that wouldn't fit elsewhere.}}
+    \end{center}
+    \vfill
+    \clearpage
+```
+:::
+
+::: {.content-visible when-format="html"}
+<br>
+
+:::

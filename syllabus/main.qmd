@@ -1,0 +1,141 @@
+# Syllabus {.unnumbered .centered-title}
+
+::: {.content-hidden}
+{{< include ../_macros.qmd >}}
+:::
+
+{{< include _syllabus-header.qmd >}}
+
+### Websites
+[Moodle]({{< var materials.moodle-url >}}),
+[Course Notes]({{< var materials.notes-url >}}),
+[Google Drive]({{< var materials.drive-url >}})
+
+### Textbook
+*{{< var materials.textbook.title >}}*, by {{< var materials.textbook.author >}}.
+
+### Prerequisites
+{{< var course.prerequisites >}}
+
+### Course description
+{{< var course.description >}}
+
+### How to succeed
++ Pre-read actively and come to class with questions,
++ Begin homework immediately after it is assigned,
++ Work with each other and work towards building a supportive community,
++ Visit my office hours frequently and ask lots of questions!
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \bigskip
+    \begin{notebox}
+    \textbf{Talk to me!} I have specifically worked to design a course that challenges the ways we think and allows us to grow together. If you need help, or even if you don't and just have suggestions or thoughts, please come to my office! I promise to treat your problems with respect and to keep any sensitive conversations as confidential as I can, but note that (under \href{https://www.carleton.edu/sexual-misconduct/get-help/reporting-2/required-reporting/}{Title IX}) I am a mandatory reporter of sexual misconduct.
+    \end{notebox}
+```
+:::
+
+:::: {.content-visible when-format="html"}
+::: {.callout-tip}
+#### Talk to me!
+I have specifically worked to design a course that challenges the ways we think and allows us to grow together. If you need help, or even if you don't and just have suggestions or thoughts, please come to my office! I promise to treat your problems with respect and to keep any sensitive conversations as confident as I can, but note that (under [Title IX](https://www.carleton.edu/sexual-misconduct/get-help/reporting-2/required-reporting/)) I am a mandatory reporter of sexual misconduct.
+:::
+::::
+
+{{< pagebreak >}}
+
+## Course Outline
+
+**Schedule is subject to change!** While the material we learn is building up a coherent and interrelated set of ideas, the primary content evaluated in a particular Midterm corresponds to the Module of the same number (the final Exam corresponds largely to the final Module).
+
+{{< include _course-schedule.qmd >}}
+{{< pagebreak >}}
+
+## Grade Details
+
+### Grading
+
+This class will be graded on an A--F scale, as detailed below.
+
+{{< include _grades-table.qmd >}}
+
+I reserve the right to change this distribution, but will only do so in a way that would make your grade better (never worse). 
+In general, a B indicates that you have learned the key concepts of this course and could reliably apply them in the future. 
+An A indicates that you have demonstrated a deeper understanding not only of how to apply ideas but also in communicating and exploring concepts beyond the scope of the course.
+
+### Grade breakdown
+
+Final marks for the course will be computed using the following weights.
+
++ **Community**, worth 2% of your grade. There are chances to do this every day—by contributing to discussions, working with others on homework, representing your group after breakouts, and contributing to the Notes repository. Your presence benefits you, your classmates, and me!
+
++ **Journaling**, done weekly, in total worth 3% of your grade. These are written assignments due at the end of each week that provide space for self-evaluation, chronicling what you've learned, synthesizing concepts from previous classes, and providing ongoing course feedback.
+
++ **Homework**, ten assignments, in total worth 20% of your grade. These problem sets allow you to exercise techniques that we have discussed in class and also build experience in mathematical communication. You are encouraged to work in groups! Much of the work of this class will happen in these assignments, where you connect with peers and cement your own knowledge. Turn in homework during class or to the course mailbox. Late Homework is accepted with a penalty, detailed in the Late work policy; Homework that is more than a week late will not be accepted. Your lowest assignment will be dropped in computing your final grade.
+
++ **Midterm Project** (aka, the Great Hypersquare Hunt), worth 20% of your grade. This collaborative project will involve computing the character table invariant for various finite groups, and submitting results in the style of a professional mathematical paper. You will practice summarizing methods of calculation, describing computed results, and proof writing.
+
++ **Exams**, two midterms and a final, in total worth 55% of your grade. The exams are spaces for you to demonstrate the material that you have mastered on your own. If you require additional accommodations for these forms of assessment, let me know well in advance.
+
+## Support and Other Policies
+
+### Drop-in hours
+
+These are times that I set aside during my week to be available for you. 
+Just show up! You do not need to make an appointment and you are not annoying me.
+
+### Late work
+
+For every day that a Homework assignment is turned in late, the associated grade will be dropped $\frac{1}{2}$ of a letter grade (e.g., an assignment turned in Wednesday that was due Monday and would have received an A would receive a B). You will have 4 Late Credits to apply to late Homework assignments. Each Late Credit is worth 1 day to turn in an assignment late without penalty: e.g., turning in an assignment due Wednesday on the following Friday would use 2 Late Credits. Late assignments will not be accepted beyond a week after the original deadline, except in explicit cases of extension. As per College policy, Late Credits cannot extend deadlines past the last day of class.
+
+### Collaboration and academic integrity
+
+Math is a collaborative activity! Even when we publish a paper alone, mathematicians are part of a sociopolitical fabric animated by our roles in institutions of education, research, and industry. You should work with your classmates to learn this material; you will do this in class! However, you may not copy anyone else's work. Rather, you must write up your own solutions and give credit to classmates and other collaborators for important insights. Cases of academic dishonesty are taken seriously by the [College](https://www.carleton.edu/handbook/academics/policy/329/) and I am required to report them.
+
+### Large language models and generative AI
+
+I understand the increasing ubiquity of these technologies, but I discourage their use in this course. While I can imagine some applications---helping you experiment with SageMath, for example---I encourage you to always critically reflect on whose labor is being replaced or which relationships lose out when you invoke these tools. If you are interested in thinking about sociological dimensions of automation and mathematical labor, [here's a good place to start](https://arxiv.org/pdf/2309.11457). Remember, I ask you to grapple with complex ideas in this course because we grow from productive struggle.
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \bigskip
+    \begin{notebox}
+    In general, I view "generational use" of LLMs as inappropriate for this class, while "assistive use" can be appropriate. You may not ask an LLM to solve a problem for you or ask questions of such a system that you would not ask of a classmate or me. I do not authorize the sharing of my course materials with AI platforms. Moreover, I ask you to only turn to LLMs towards understanding a homework problem (\emph{never} on exams or course projects) after working with classmates and me. Transcription software is not allowed in class except with explicit permission via accommodation request.
+    \end{notebox}
+```
+:::
+
+:::: {.content-visible when-format="html"}
+::: {.callout-note}
+#### Usage of LLMs
+
+In general, I view "generational use" of LLMs as inappropriate for this class, while "assistive use" can be appropriate. You may not ask an LLM to solve a problem for you or ask questions of such a system that you would not ask of a classmate or me. I do not authorize the sharing of my course materials with AI platforms. Moreover, I ask you to only turn to LLMs towards understanding a homework problem (*never* on exams or course projects) after working with classmates and me. Transcription software is not allowed in class except with explicit permission via accommodation request.
+:::
+::::
+
+{{< pagebreak >}}
+
+### Sources of support
+
+You should expect to be challenged in this course! If you are stuck, know that you are following in the footsteps of all who came before you. Here is a list of available resources, some of which will be expanded upon below:
+
++ Your classmates and me!
++ The [Academic Support Center](https://www.carleton.edu/asc/), [Student Health and Counseling](https://www.carleton.edu/student-health/), and the [Dean of Students Office](https://www.carleton.edu/dean-of-students/emergency-funding/).
+
+### Student health
+
+Your well-being should be your first priority. It is important to recognize stress you may be facing, which can be personal, emotional, physical, financial, or academic. Sleep, exercise, and building a supportive community are important! Please do not come to class if you are sick—instead, stay in communication with me and other students. If you cannot attend class for an extended period of time, reach out to me on how we can make accommodations for missed material and late work.
+
+### Accommodations for students with disabilities
+
+The [Office of Accessibility Resources](https://www.carleton.edu/accessibility-resources/) is the campus office that collaborates with students who have disabilities to provide and/or arrange reasonable accommodations. If you have, or think you may have, a disability (e.g., mental health, attentional, learning, autism spectrum disorders, chronic health, traumatic brain injury and concussions, vision, hearing, mobility, or speech impairments), please contact [`oar@carleton.edu`](mailto:oar@carleton.edu) to arrange a confidential discussion regarding equitable access and reasonable accommodations. The College also makes available assistive technologies including audio recording Smartpens, text-to-speech and speech-to-text software, and more.
+
+### Personal electronics
+
+There are no restrictions on phones, tablets, laptops, or other electronic equipment in the classroom, provided that said equipment is being used respectively and non-disruptively. Please silence your devices and be mindful of others, especially in discussions or other collaborative contexts.
+
+### Title IX
+
+Be aware that all Carleton faculty and staff members, with the exception of Chaplains and SHAC staff, are "responsible employees." Responsible employees are required to share any information they have regarding incidents of sexual misconduct with the Title IX Coordinator. Carleton's goal is to ensure community members are aware of all the options available and have access to the resources they need. If you have questions, please contact Carleton's Title IX Coordinator or visit the [Sexual Misconduct Prevention and Response](https://www.carleton.edu/sexual-misconduct/) website.
+
+{{< include _land-acknowledgement.qmd >}}

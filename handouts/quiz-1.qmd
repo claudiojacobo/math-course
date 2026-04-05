@@ -1,0 +1,23 @@
+# Quiz 1 {.unnumbered .centered-title}
+
+::: {.content-hidden}
+{{< include ../_macros.qmd >}}
+:::
+
+::::: {.exam}
+
+::: {#prb-transport-eval .question points=10}
+Recall the coherence condition from @def-hypersquare. Let $Q$ be a 2-dimensional hypersquare where the transport operators on the boundary edges satisfy $T_1 T_2 T_3 T_4 = \Id$. If 
+$$
+    T_1 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}
+$$
+and $T_2 = T_3 = \Id$, determine the operator $T_4$.
+:::
+
+
+::: {#prb-anomalous-geodesic .question points=5}
+In the context of the anomalous geodesics discussed in class, briefly explain why a geodesic path on a hypersquare might exhibit self-intersection without forming a singularity.
+:::
+
+
+:::::

@@ -1,0 +1,174 @@
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\small
+\begin{multicols}{2}
+\raggedright
+```
+:::
+
+### Module 1: Combinatorial Fundamentals
+
+#### Week 1: Fundamentals of Square-Logic
+
++ **Tuesday:** *The classical $n$-cube.* §2.1 and §3. 
+  + Syllabus discussion,
+  + Face lattices and binary string representations.
+
++ **Thursday:** *Combinatorial topologies.* §2.2--2.3. 
+  + Incidence data and bounded half-spaces,
+  + Moving from geometric to combinatorial viewpoints,
+  + Where classical intuitions fail.
+
++ **Homework 0** by Friday at 4 PM.
++ **Journal 1** by Saturday at midnight.
+
+#### Week 2: Transport Operators
+
++ **Tuesday:** *Discrete transport.* §4.1--4.2.
+  + Oriented edges and operator assignment,
+  + Defining the hypersquare space,
+  + Sub-cubes and examples.
+
++ **Thursday:** *Coherence conditions.* §4.3--4.4.
+  + 2-face automorphisms,
+  + Introduction to `SageMath` for hyper-dimensional grids.
+
++ **Homework 1** due by Wednesday at 4 PM.
++ **Journal 2** due by Saturday at midnight.
+
+#### Week 3: The Departure from Riemann
+
++ **Tuesday:** *Local Euclidean charts.* §5.1.
+  + Where the Pythagorean theorem still holds,
+  + Properties of discrete orthogonality.
+
++ **Thursday:** *Global incompatibility.* §5.2 and §6.1.
+  + The breakdown of metric tensors across boundaries,
+  + Uniqueness of local limits.
+
++ **Homework 2** due by Tuesday at 4 PM.
++ **Journal 3** due by Saturday at midnight.
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\vfill\null
+\columnbreak
+```
+:::
+
+### Module 2: Holonomy & Anomalous Geodesics
+
+#### Week 4: Parallel Transport
+
++ **Tuesday:** *Phase shifts.* §6.2--6.3.
+  + Transport across non-trivial loops,
+  + Polynomial invariants of discrete paths.
+
++ **Thursday:** *Holonomy of hypersquares.* §6.4--6.5.
+  + Calculations without smooth manifolds,
+  + Coherence as invariance.
+  + **Begin Midterm 1.**
+
++ **Homework 3** due by Tuesday at 4 PM.
++ **Journal 4** due by Saturday at midnight.
+
+#### Week 5: Square-Logic Calculus
+
++ **Tuesday:** *Discrete actions.* §7.1.
+  + Minimizing edge sequences,
+  + Projections across boundaries.
+
++ **Thursday:** *Anomalous geodesics.* §7.2.
+  + Periodicity in straight lines,
+  + Redefining shortest paths.
+
++ **Homework 4** due by Tuesday at 4 PM.
++ **Midterm 1** due in class on Thursday.
++ **Journal 5** due by Saturday at midnight.
+
+#### Week 6: Path Intersections
+
++ **Tuesday:** *Paradoxical topologies.* §8.1.
+  + Self-intersecting geodesics without degeneracy.
+
++ **Thursday:** *Applications.* §8.2.
+  + **Begin Midterm Project (The Great Geodesic Hunt).**
+
++ **Homework 5** due by Tuesday at 4 PM.
++ **Journal 6** due by Saturday at midnight.
+
+#### Week 7: The Chessboard Universe
+
++ **Tuesday:** *Four-dimensional modeling.* §9.1.
+  + Grid-based continuous structures,
+  + Random walks on $n$-dimensional chessboards.
+
++ **Thursday:** *Periodic transitions.* §9.2.
+  + Macro-scale anomalies,
+  + Shuffling dimensions.
+
++ **Homework 6** due by Tuesday at 4 PM.
++ **Journal 7** due by Saturday at midnight.
+
+### Module 3: Applied Hypersquares
+
+#### Week 8: Data Compression
+
++ **Tuesday:** *Review.* §9.3.
+  + Wrapping up 4D anomalies,
+  + Accounting of our progress.
+
++ **Thursday:** *Topological storage.* §10.1--10.3.
+  + How non-metric structures compress information,
+  + Bounding infinite sequences.
+  + **Begin Midterm 2.**
+
++ **Homework 7** due by Tuesday at 4 PM.
++ **Midterm Project** due by Thursday at 4 PM.
++ **Journal 8** due by Saturday at midnight.
+
+#### Week 9: Infinite Complexes
+
++ **Tuesday:** *Lifting to infinity.* §10.4 and §11.1.
+  + Infinite cubical complexes,
+  + Exponentials and path lifting.
+
++ **Thursday:** *Continuous limits.* §11.2--11.3.
+  + Approximating spheres with hypersquares,
+  + Irreducible boundary faces.
+
++ **Homework 8** due by Tuesday at 4 PM.
++ **Midterm 2** due in class on Thursday.
++ **Journal 9** due by Saturday at midnight.
+
+#### Week 10: Further Topics
+
++ **Tuesday:** *Advanced anomalies.* §12.1, §12.3--12.4.
+  + Connections to fractal geometry and continuous nowhere-differentiable manifolds.
+
++ **Thursday:** *Wrapping up.* §12.5.
+  + Review, and where to go next.
+  + **Begin Final Exam.**
+
++ **Homework 9** due by Tuesday at 4 PM.
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\vfill\null
+\columnbreak
+```
+:::
+
+### Final Exam Period
+
+#### Week 11:
+
++ **Review Sessions**
++ [**Final Exam**](https://www.carleton.edu/registrar/academic-term/exams/) due 2026-03-16 by 4 PM.
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\end{multicols}
+\normalsize
+```
+:::

@@ -1,0 +1,31 @@
+# Quarto build directories
+_site/
+_instructor/
+_accessible/
+.quarto/
+
+# Python virtual environment
+.venv/
+__pycache__/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Output files
+*.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.fls
+*.synctex.gz
+*.bcf
+*.run.xml
+*.fdb_latexmk
+*luamml-mathml.html
+/.quarto/
+**/*.quarto_ipynb

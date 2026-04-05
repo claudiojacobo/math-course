@@ -1,0 +1,14 @@
+book:
+  appendices:
+    - part: "Handouts"
+      contents:
+        - handouts/quiz-1.qmd
+    - part: "Exams"
+      contents:
+        - exams/midterm-1.qmd
+
+project:
+  output-dir: _instructor
+
+filters:
+  - gradetable.lua

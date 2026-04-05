@@ -1,0 +1,21 @@
+# Homework 0 {.centered-title}
+
+::: {.content-hidden}
+{{< include ../_macros.qmd >}}
+:::
+
+{{< include _homework-header.qmd >}}
+
+::: {#exr-hypotenuse-calculation} 
+Using @thm-pythagoras, find the hypotenuse of a right triangle with legs $a=3$ and $b=4$.
+:::
+
+::: {.content-visible when-profile="instructor"}
+*Solution*.
+Because we are using the `instructor` profile, you can see this! 
+$$
+    3^2 + 4^2 = c^2 \implies 9 + 16 = c^2 \implies c = 5.
+$$
+:::
+
+

@@ -1,0 +1,64 @@
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \pagestyle{plain} 
+    \setcounter{page}{1}
+    \begin{center}
+        {\Large Math {{< var course.number >}}: {{< var course.name >}}}
+    \end{center}
+
+    \section*{Course Basics}
+
+    \newcommand{\instructorname}{%
+        {{< var instructor.name >}}%
+    }
+    \newcommand{\instructoremail}{%
+        {{< var instructor.email >}}%
+    }
+    \newcommand{\instructoroffice}{%
+        {{< var instructor.office >}}%
+    }
+    \newcommand{\classtime}{%
+        {{< var logistics.class-time >}}%
+    }    
+    \newcommand{\classlocation}{%
+        {{< var logistics.class-location >}}%
+    }    
+    \newcommand{\dropinlocation}{%
+        {{< var logistics.dropin-location >}}%
+    }    
+
+    \begin{tabular}{
+    >{\raggedright\arraybackslash}p{0.9in}
+    >{\raggedright\arraybackslash}p{1.9in}
+    >{\raggedright\arraybackslash}p{1.5in}
+    >{\raggedright\arraybackslash}p{1.5in}
+    }
+    \toprule
+    \cellcolor{lightgray}\textbf{Instructor} &
+    \instructorname &
+    \cellcolor{lightgray}\textbf{Class Time} &
+    \href{https://www.carleton.edu/registrar/calendars/daily-class-timetable/}{\classtime} \\
+    \midrule
+    \cellcolor{lightgray}\textbf{Email} &
+    \href{mailto:\instructoremail }{\texttt{\instructoremail}} &
+    \cellcolor{lightgray}\textbf{Class Location} &
+    \classlocation \\
+    \midrule
+    \cellcolor{lightgray}\textbf{Office} &
+    \textcolor{black}{\instructoroffice} &
+    \cellcolor{lightgray}\textbf{Drop-In Location} &
+    \textcolor{black}{\dropinlocation} \\
+    \bottomrule
+    \end{tabular}    
+```
+:::
+::: {.content-visible when-format="html"}
+
+## Course Basics
+
++ **Instructor Office:** {{< var instructor.office >}}
++ **Class Location:** {{< var logistics.class-location >}}
++ **Class Time:** [{{< var logistics.class-time >}}](https://www.carleton.edu/registrar/calendars/daily-class-timetable/)
++ **Drop-In Location:** {{< var logistics.dropin-location >}}
++ **Drop-In Time:** {{< var logistics.dropin-time >}}
+:::

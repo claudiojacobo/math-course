@@ -1,0 +1,7 @@
+# Preface {.unnumbered}
+
+::: {.content-hidden}
+{{< include _macros.qmd >}}
+:::
+
+A brief description of the course, preface to the lecture notes, list of available resources, and so on, goes here.

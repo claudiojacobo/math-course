@@ -1,0 +1,27 @@
+course:
+  name: "Non-Riemannian Hypersquares"
+  number: "401"
+  term: "Spring 2026"
+  prerequisites: "Math 354 or instructor permission"
+  description: "This course offers a rigorous exploration of the geometric anomalies that arise when the fundamental axioms of Riemannian curvature are suspended in favor of hyper-dimensional, square-based topologies. Students will delve into the counter-intuitive properties of hypersquares where parallel transport yields periodic phase shifts, and geodesics paradoxically intersect themselves without forming singularities, challenging our classical intuition of smooth manifolds. Through the interplay of classical algebraic topology and 'square-logic' calculus, the course examines how these non-Riemannian structures model everything from modern data compression to the theoretical underpinnings of a four-dimensional chessboard universe."
+
+instructor:
+  name: "Claudio Gómez-Gonzáles"
+  email: "cgonzales@carleton.edu"
+  office: "CMC 321"
+
+logistics:
+  class-time: "4a"
+  class-location: "CMC 319"
+  dropin-time: "Tuesday 4--5, Wednesday 3--4, Thursday 3--4"
+  dropin-location: "CMC 306 and CMC 328"
+
+materials:
+  moodle-url: "https://moodle.carleton.edu/CORRECT-ME"
+  drive-url: "https://drive.google.com/CORRECT-ME"
+  notes-url: "https://math401.cjgg.me"
+  textbook:
+    title: "The Ideal Mathematician" 
+    author: "Philip Davis and Reuben Hersh"
+
+exports-directory: "~/Work/2025-2026/Math 401/Exports"

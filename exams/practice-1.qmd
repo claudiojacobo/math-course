@@ -1,0 +1,40 @@
+# Midterm 1 (Practice) {.unnumbered .centered-title}
+
+::: {.content-hidden}
+{{< include ../_macros.qmd >}}
+:::
+
+::::: {.exam}
+
+{{< include _exam-header.qmd >}}
+{{< include _blank-page.qmd >}}
+
+::: {#prb-discrete-ivt .question points=10}
+Use the Discrete Bounding Theorem to prove that the anomalous transport function $f(x) = x^3 - x - 2$ exhibits a zero-phase shift (a root) between $x = 1$ and $x = 2$.
+:::
+
+:::: {.content-visible when-profile="instructor"}
+:::{.proof}
+The DBT states that if a transport function $f$ is continuous across adjacent faces $[a, b]$, and $L$ is a phase between $f(a)$ and $f(b)$, then there exists a boundary $c \in (a, b)$ such that $f(c) = L$.
+
+Here, $f(1) = -2$ and $f(2) = 4$. Since $f$ is polynomial, it is continuous across the hyper-grid. Because $-2 < 0 < 4$, the theorem guarantees a zero-phase boundary $c \in (1, 2)$ where $f(c) = 0$.
+:::
+::::
+
+{{< include _blank-page.qmd >}}
+
+::: {#prb-operator-composition .question points=10}
+Compute the formal phase derivative of the nested operator $g(x) = \sin(x^2)$ using the Square-Logic Chain Rule. 
+:::
+
+::: {.content-visible when-profile="instructor"}
+**Solution:**
+Using the Square-Logic Chain Rule, we differentiate the outer transport function and multiply by the inner phase derivative: 
+$$
+    g'(x) = 2x \cos(x^2).
+$$
+:::
+
+{{< include _blank-page.qmd >}}
+
+:::::

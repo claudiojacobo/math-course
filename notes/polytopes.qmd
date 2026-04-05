@@ -1,0 +1,24 @@
+# Polytopes {#sec-polytopes}
+
+::: {.content-hidden}
+{{< include ../_macros.qmd >}}
+:::
+
+We briefly recall some standard definitions and results concerning polytopes in Euclidean space. An $n$-dimensional polytope may be defined either as the convex hull of a finite set of points in $\Rb^n$ or, equivalently, as a bounded intersection of finitely many half-spaces. The $k$-dimensional faces of a polytope (for all $0 \leq k \leq n$) form a graded structure that will be useful when passing to more combinatorial descriptions.
+
+Of particular importance are cubes and their higher-dimensional analogues. The $n$-cube, or *hypercube*, can be described as the Cartesian product of $n$ intervals, and its face lattice admits a simple description in terms of binary strings. This combinatorial regularity makes hypercubes a convenient testing ground for general constructions, even in settings where the underlying metric structure is modified or only partially specified.
+
+We will frequently move between geometric and combinatorial viewpoints. In the former, notions such as length, angle, and orthogonality play a central role; in the latter, adjacency, incidence, and orientation data become primary. Later, these perspectives will no longer be entirely equivalent, and care will be required when translating between them. Firstly, we recall a fundamental result:
+
+::: {#thm-pythagoras}
+#### Pythagorean Theorem
+For a right triangle with legs $a, b$ and hypotenuse $c$, we have 
+$$
+    a^2 + b^2 = c^2.
+$$
+:::
+::: {.proof}
+See, for example, @JJ2024.
+:::
+
+We use this Theorem and its generalizations from planar geometry implicitly when working in locally Euclidean coordinates, particularly when describing orthogonal decompositions and distance computations in $\Rb^n$. The role in more general settings will be qualified throughout these notes.

@@ -1,0 +1,82 @@
+::: {.content-visible when-format="pdf"}
+```{=latex}
+\begin{center}
+\begin{tabular}{%
+  >{\centering\arraybackslash}p{1.5in}
+  >{\centering\arraybackslash}p{1.5in}
+  >{\centering\arraybackslash}p{1.5in}%
+}
+\toprule
+\textbf{A--} [90\%, 93\%) & \multicolumn{2}{c}{\cellcolor{lightgray} \textbf{A} [93\%, 100\%]} \\
+\midrule
+\textbf{B--} [80\%, 83\%) & \textbf{B} [83\%, 87\%) & \textbf{B+} [87\%, 90\%) \\
+\midrule
+\textbf{C--} [70\%, 73\%) & \textbf{C} [73\%, 77\%) & \textbf{C+} [77\%, 80\%) \\
+\midrule
+\multicolumn{2}{c}{\cellcolor{lightgray} \textbf{D} [60\%, 67\%)} & \textbf{D+} [67\%, 70\%) \\
+\midrule
+\multicolumn{3}{c}{\cellcolor{lightgray} \textbf{F} [0, 59\%)} \\
+\bottomrule
+\end{tabular}
+\end{center}
+```
+:::
+
+::: {.content-visible when-format="html"}
+<table class="grade-table" aria-label="Grade conversion table">
+  <tbody>
+    <tr>
+      <td class="grade-other">A–<br><span class="range">[90%, 93%)</span></td>
+      <td class="grade-A" colspan="2">A<br><span class="range">[93%, 100%]</span></td>
+    </tr>
+    <tr>
+      <td class="grade-other">B–<br><span class="range">[80%, 83%)</span></td>
+      <td class="grade-other">B<br><span class="range">[83%, 87%)</span></td>
+      <td class="grade-other">B+<br><span class="range">[87%, 90%)</span></td>
+    </tr>
+    <tr>
+      <td class="grade-other">C–<br><span class="range">[70%, 73%)</span></td>
+      <td class="grade-other">C<br><span class="range">[73%, 77%)</span></td>
+      <td class="grade-other">C+<br><span class="range">[77%, 80%)</span></td>
+    </tr>
+    <tr>
+      <td class="grade-D" colspan="2">D<br><span class="range">[60%, 67%)</span></td>
+      <td class="grade-other">D+<br><span class="range">[67%, 70%)</span></td>
+    </tr>
+    <tr>
+      <td class="grade-F" colspan="3">F<br><span class="range">[0%, 59%]</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+.grade-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+.grade-table td {
+  border: 1px solid;
+  padding: 0.35em 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+.range {
+  font-size: 0.85em;
+  font-weight: normal;
+  display: block;
+}
+.grade-A {
+  background-color: var(--bs-info-bg-subtle);
+}
+.grade-D {
+  background-color: var(--bs-warning-bg-subtle);
+}
+.grade-F {
+  background-color: var(--bs-danger-bg-subtle);
+}
+.grade-other {
+  background-color: var(--my-code-bg);
+}
+</style>
+:::

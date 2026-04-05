@@ -1,0 +1,102 @@
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \pagestyle{plain} 
+    \setcounter{page}{1}
+    \begin{center}
+        {\Large Math {{< var course.number >}}: {{< var course.name >}}} \\[0.5em]
+        {\large Professor {{< var instructor.name >}}}
+    \end{center}
+    
+    \vspace{1.5cm}
+
+    \noindent
+    \begin{minipage}{0.65\textwidth}
+    \textbf{Name}:\ \hrulefill
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.30\textwidth}
+    \textbf{Date}:\ \hrulefill
+    \end{minipage}
+    \bigskip
+```
+:::
+::: {.content-visible when-format="html"}
+
+:::: {.columns}
+::: {.column width="60%"}
+**Name:** ________________________
+:::
+::: {.column width="30%" layout-align="right"}
+**Date:** ________________________
+:::
+::::
+:::
+
+<br>
+
+[GRADETABLE]
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \vspace{-1mm}
+    \rule{\textwidth}{1pt}
+```
+:::
+
+<br>
+
+**You are responsible for following the instructions below:**
+
++ **Write neatly, box answers, and show work.** I want to give you partial credit if possible!
+
++ **Do not refer to calculators, computational engines, or other outside resources.** You may use results proved in previous homework, the Lecture Notes, or class unless otherwise stated. If you are asked to prove a statement in the exam, you are free to use it in subsequent problems (e.g., if problem 2c asks you to demonstrate a lemma that you could then use to solve part 3b, you may do so freely even if you are unable to complete the proof of 2c).
+
++ **Do not discuss the exam with anyone before it is due.**
+
++ **Do not share copies of the exam for any reason.**
+
+Good luck!
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \vspace{-2mm}
+    \noindent \rule{\textwidth}{1pt}
+```
+:::
+::: {.content-visible when-format="html"}
+***
+<br>
+:::
+
+*I agree to these conditions and furthermore I understand that failing to follow these instructions (e.g., by using or accessing disallowed resources, sharing exam materials, etc.) is a violation of academic integrity as defined within the Carleton College student handbook:* `https://apps.carleton.edu/handbook/`.
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \bigskip
+```
+:::
+::: {.content-visible when-format="html"}
+<br>
+:::
+
+*On my honor, I have neither received or given unauthorized assistance on this examination!*
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \vfill
+    \vfill
+```
+:::
+::: {.content-visible when-format="html"}
+<br>
+:::
+
+**Signature:** ________________________
+
+::: {.content-visible when-format="pdf"}
+```{=latex}
+    \bigskip
+```
+:::
+
+{{< pagebreak >}}

@@ -1,0 +1,38 @@
+\RequirePackage{amsmath, amsthm, mathrsfs}
+\RequirePackage{mathtools}
+\RequirePackage{unicode-math}
+\RequirePackage{booktabs}
+\RequirePackage{multicol}
+\RequirePackage{diffcoeff}
+\RequirePackage{tikz-cd}
+
+\RequirePackage[table]{xcolor}
+\RequirePackage[many]{tcolorbox}
+\definecolor{coolGray}{HTML}{A0A0A0}
+\definecolor{softSkyBlue}{HTML}{9AB8FD}
+\definecolor{rosePink}{HTML}{E361A0}
+\definecolor{coralOrange}{HTML}{FD8F60}
+\definecolor{lavenderPurple}{HTML}{998BF2}
+\definecolor{mintGreen}{HTML}{1CCA93}
+\definecolor{warmAmber}{HTML}{FEC161}
+\definecolor{brightRed}{HTML}{D40000}
+\definecolor{carletonMaize}{HTML}{FFD24F}
+\definecolor{carletonBlue}{HTML}{003069}
+
+\newtcolorbox{notebox}{
+    colback=carletonMaize,
+    colframe=carletonBlue,
+    coltext=black,
+    sharp corners,
+    boxrule=1pt,
+    leftrule=3mm,
+    before upper={\parindent0pt},
+    fontupper=\normalfont,
+}
+
+\setmainfont{STIX Two Text}
+\setmathfont{STIX Two Math}
+\setmonofont{IBM Plex Mono}[Scale=MatchLowercase]
+
+\RequirePackage{hyperref}
+\RequirePackage[capitalize, nameinlink]{cleveref}
