@@ -2,7 +2,7 @@
 
 A repository for managing and typesetting mathematical courses as a single Quarto book.
 
-This template uses **Quarto**, **Lua filters**, and **Python scripts** to produce typeset and accessible course materials in HTML and PDF format from a single codebase. 
+This template uses **Quarto**, **Lua filters**, and **Python scripts** to produce typeset and accessible course materials in HTML and PDF format from a single codebase. **For an example of a course built using this template**, see [Math 362](https://math362.cjgg.me/syllabus/main.html) at Carleton College (and its accompanying [PDF](https://math362.cjgg.me/Math-362.pdf)).
 
 ## ✨ Features
 
@@ -51,17 +51,17 @@ The `build.sh` script also accepts `-p` (preview), `-a` (accessible) modes, and 
 
 ### 📂 Repository Structure
 
-+ `build.sh`: The script containing several common build commands.
 + `_quarto.yml`: Controls formatting, book structure, and profile definitions for public-facing book (website).
 + `_quarto-instructor.yml`: Implements a profile for rendering all files, including exams and solution manuals.
 + `_quarto-accessible.yml`: Allows the use of `axe-core` for live accessibility audits.
 + `_variables.yml`: Contains course configuration data used to auto-populate files.
 + `_macros.qmd`: Shared LaTeX macros injected into all working files.
++ `_site/`, `_instructor/`, and `_accessible/`: The directories where builds place exported files, depending on the profile.
++ `build.sh`: The script containing several common build commands.
 + `.scripts/`: A folder for typesetting logic scripts.
     + `chopper.py`: Slices the compiled master PDF into individual files for student use.
     + `*.lua`:  Pandoc filters that handle formatting, exam logic, and autonumbering.
-+ `homework/hw-*.qmd`, `exams/exam-*.qmd`, etc.: Markdown content files.
-+ `_site/`, `_instructor/`, and `_accessible`: The directories where builds place the resulting files, depending on the profile.
++ `homework/hw-*.qmd`, `exams/exam-*.qmd`, etc.: Markdown content files---actual course materials go here!
 
 ### Deployment
 
