@@ -66,17 +66,9 @@
   font-weight: normal;
   display: block;
 }
-.grade-A {
-  background-color: var(--bs-info-bg-subtle);
-}
-.grade-D {
-  background-color: var(--bs-warning-bg-subtle);
-}
-.grade-F {
-  background-color: var(--bs-danger-bg-subtle);
-}
-.grade-other {
-  background-color: var(--my-code-bg);
-}
+.grade-A { background-color: var(--span-bg-blue); }
+.grade-D { background-color: var(--span-bg-yellow); }
+.grade-F { background-color: var(--span-bg-red); }
+.grade-other { background-color: var(--span-bg-gray); }
 </style>
 :::
