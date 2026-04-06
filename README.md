@@ -36,14 +36,14 @@ After cloning the repo, configure the `_quarto.yml` and `_variables.yml` files w
 
 Next, run `./build.sh` and view the resulting PDFs in `_instructor` and the directory you just specified to ensure all packages are properly configured. Review the auto-generated syllabus to ensure your information is thoroughly populated, then implement your own course policies!
 
-### Usage
+### Workflow
 
 When developing course materials, place new `*.qmd` files into the `homework/`, `notes/`, and other such directories. Add references to these documents in the top-level `.yml` files:
 
 + Public-facing ("open") content goes into `_quarto.yml`
 + Instructor-only ("closed") material go into `_quarto-instructor.yml`. 
 
-Note that public-facing content can also be conditionally enhanced in instructor mode. For example, we can write homework solutions inside a `when-profile="instructor"` block (see `hw-0.qmd` for an example)---these will only render when we build the instructor version---or make clickable solutions only available online (`when-format="html"`; see `practice-1.qmd`).
+Note that public-facing content can also be conditionally enhanced in instructor mode. For example, we can write homework solutions inside a `when-profile="instructor"` block (see [`hw-0.qmd`](homework/hw-0.qmd) for an example)---these will only render when we build the instructor version---or make clickable solutions that are only available online (`when-format="html"`; see [`practice-1.qmd`](exams/practice-1.qmd)).
 
 Compiled master PDFs (Homework, Exams, Syllabus, etc.) will automatically be placed into the `_site/` directory (for students) or the `_instructor/` directory. In addition, the `build.sh` script will excise individual materials from these PDFs, which will appear in `export-dir`. 
 
@@ -68,20 +68,21 @@ Note that the script displays the Quarto command it runs, in case you prefer to 
 
 ### 📂 Repository Contents
 
-+ The materials you will edit are:
-    + `_quarto.yml`: Controls formatting and structure data for public-facing book (website).
-    + `_quarto-instructor.yml`: Implements a profile for rendering all instructor-facing files.
++ The materials you will regularly edit are:
+    + `_quarto.yml`: Controls formatting and structure data for public-facing book (website). Add student-facing materials here.
+    + `_quarto-instructor.yml`: Implements a profile for rendering all course content. Add instructor-facing materials here.
     + `_variables.yml`: Contains course configuration data used to auto-populate files.
     + `_macros.qmd`: Shared LaTeX macros (**make sure to include these in all working files!**)
-    + `homework/hw-*.qmd`, `exams/exam-*.qmd`, etc: These files contain the actual coursre content.
+    + `homework/hw-*.qmd`, `exams/exam-*.qmd`, etc: These files contain the actual course content.
 
-+ Additional materials 
++ Additional materials of interest:
     + `_site/`, `_instructor/`, and `_accessible/`: The directories where builds place exported files, depending on the profile.
     + `build.sh`: The script containing several common build commands.
     + `.scripts/`: A hidden folder for typesetting logic scripts.
         + `chopper.py`: Slices the compiled master PDF into individual files for student use.
         + `*.lua`:  Pandoc filters that handle formatting, exam logic, and autonumbering.
     + `_quarto-accessible.yml`: Allows the use of `axe-core` for live accessibility audits.
+    + `favicon.ico`: Replace this with your own personal branding!
 
 ### Deployment
 
