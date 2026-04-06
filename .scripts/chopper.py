@@ -95,7 +95,7 @@ def chop_master_pdf(output_dir="_chopped", skip_body=True):
             cuts.append(b)
             seen_pages.add(b["page"])
 
-    print(f"✂️ Found {len(cuts)} structural sections. Slicing...")
+    print(f"✂️ Identified {len(cuts)} structural sections. Slicing...")
 
     reached_endmatter = False
     for i, cut in enumerate(cuts):
@@ -105,7 +105,7 @@ def chop_master_pdf(output_dir="_chopped", skip_body=True):
             if cut["title"] == "References":
                 reached_endmatter = True
             else:
-                print(f"  ⏭️ Skipping main text: {cut['title']}")
+                print(f"    ⏭️ Skipping main text: {cut['title']}")
                 continue
 
         start_page = cut["page"]
@@ -113,7 +113,7 @@ def chop_master_pdf(output_dir="_chopped", skip_body=True):
         length = end_page - start_page
         
         if cut["is_parent"] and length == 1:
-            print(f"  ⏭️ Skipping title page: {cut['title']}")
+            print(f"    ⏭️ Skipping title page: {cut['title']}")
             continue
         
         writer = PdfWriter()
@@ -124,7 +124,7 @@ def chop_master_pdf(output_dir="_chopped", skip_body=True):
         with open(out_file, "wb") as f:
             writer.write(f)
             
-        print(f"📄 Saved: {out_file.name} (Pages {start_page+1}-{end_page})")
+        print(f"  📄 Saved: {out_file.name} (Pages {start_page+1}-{end_page})")
 
 if __name__ == "__main__":
     chop_master_pdf(OUTPUT_DIRECTORY)

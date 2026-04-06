@@ -72,7 +72,7 @@ if [[ $ACCESSIBLE -eq 1 ]]; then
     Q_CMD+=(--profile accessible)
 fi
 
-echo "⚙️  Executing: ${Q_CMD[*]}"
+echo "⚙️ Executing: '${Q_CMD[*]}'"
 "${Q_CMD[@]}"
 
 if [[ $PREVIEW -eq 0 ]]; then
