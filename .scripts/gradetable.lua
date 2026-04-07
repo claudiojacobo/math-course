@@ -1,5 +1,17 @@
+--- Process exam blocks, produce a gradetable, and resolve cross‑references for problems and parts.
+-- Performs two passes over the document:
+-- 1. Finds every `Div` with class `exam`.
+--   - Inside each exam block, looks for `Div` elements with class `question`.
+--   - Within a `.question` block, children with class `part` are grouped together and converted into a native Pandoc ordered list (lowercase letters, parentheses). Any non‑`.part` content (e.g., text, code blocks) between part groups is preserved.
+--   - Adds point labels to each `.part` and to the main `.question`
+--   - Replaces a paragraph containing exactly `[GRADETABLE]` with a Pandoc table listing problem numbers, points, and a blank "Score" column.
+--   - Stores cross‑reference information for each problem and part in an internal map (using their `identifier` attributes).
+-- 2. Converts `Cite` elements into links that point to the corresponding problem or part, using the map built in pass 1.
+-- @param doc (table) The full Pandoc document AST.
+-- @return (table) The modified document AST.
+
 function Pandoc(doc)
-  local id_map = {} -- Stores cross-references globally
+  local id_map = {} -- Stores cross-references
 
   -- PASS 1: Find any ::: {.exam} blocks and process them independently
   doc = doc:walk({

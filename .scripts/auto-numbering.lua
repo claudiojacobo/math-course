@@ -1,17 +1,20 @@
+--- Process an H1 header with class 'centered-title' to inject LaTeX homework counters.
+-- Extracts a homework number from the header text, then injects LaTeX code that resets and renumbers exercise, codelisting, and lstlisting counters using that number. It ensures the counters exist before redefining them.
+-- @param el (table) A Pandoc header element (level, classes, content, ...)
+-- @return (table|nil) A list containing the original header and a RawBlock with LaTeX code, or nil if the header does not match the criteria.
+
 function Header(el)
-  -- Look for an H1 that has your specific class
   if el.level == 1 and el.classes:includes("centered-title") then
     local text = pandoc.utils.stringify(el)
     
-    -- Make sure it's actually a Homework file
+    -- Make sure the H1 contains "Homework"
     if string.find(text, "Homework") then
       -- Extract the first number found in the title text
       local hw_num = string.match(text, "%d+")
       
       if hw_num then
         -- Build the raw LaTeX block to inject.
-        -- We check if the listing counters exist to prevent compilation errors
-        -- on assignments that do not contain any code blocks.
+        -- We check if the listing counters exist to prevent compilation errors on assignments that do not contain any code blocks.
         local latex_snippet = string.format([[
 \pagestyle{plain}
 \setcounter{page}{1}
