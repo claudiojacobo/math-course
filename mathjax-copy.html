@@ -7,55 +7,47 @@
           || !event.clipboardData) return;
 
       let finalResults = [];
-
       let containsMath = false;
+
       for (let i = 0; i < selection.rangeCount; i++) {
           const range = selection.getRangeAt(i);
           const container = range.commonAncestorContainer.nodeType === 1 
                 ? range.commonAncestorContainer 
                 : range.commonAncestorContainer.parentNode;
           
-          // Check if the container itself has the class or contains it
           if (container.closest('.math') || container.querySelector('.math')) {
               containsMath = true;
               break;
           }
       }
 
-      // if none of the ranges contain math then do the default copying
       if (!containsMath) return;
 
       for (let i = 0; i < selection.rangeCount; i++) {
           const range = selection.getRangeAt(i);
-          
           const container = range.commonAncestorContainer.nodeType === 1 
                 ? range.commonAncestorContainer 
                 : range.commonAncestorContainer.parentNode;
 
           const mathItems = MathJax.startup.document.getMathItemsWithin(container);
-          
-          
           const clonedContents = range.cloneContents();
           const tempDiv = document.createElement('div');
           tempDiv.appendChild(clonedContents);
 
+          const renderedElements = tempDiv.querySelectorAll('mjx-container');
+          let mathIndex = 0;
+
           mathItems.forEach((item) => {
-              if (range.intersectsNode(item.start.node)) {
-                  const renderedElements = tempDiv.querySelectorAll('mjx-container');
-                  
-                  renderedElements.forEach(el => {
-                      const texSource = item.start.delim + item.math + item.end.delim;
-                      el.replaceWith(texSource);
-                  });
+              if (range.intersectsNode(item.start.node) && mathIndex < renderedElements.length) {
+                  const texSource = item.start.delim + item.math + item.end.delim;
+                  renderedElements[mathIndex].replaceWith(texSource);
+                  mathIndex++;
               }
           });
           finalResults.push(tempDiv.textContent || tempDiv.innerText);
       }
 
       const combinedString = finalResults.join('');
-      
-      console.log('Copied with TeX Equations:', combinedString);
-
       event.clipboardData.setData('text/plain', combinedString);
       event.preventDefault();
   });
