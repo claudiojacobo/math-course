@@ -6,9 +6,10 @@ This template uses Quarto, Lua, and Python to produce typeset and accessible cou
 
 ## ✨ Features
 
-+ **Single Source of Truth:** Shared macros, metadata, and styles are defined once and applied globally throughout the course.
++ **Single Source of Truth:** Shared macros, metadata, and styles are applied globally throughout the course.
 + **Smart Profiles:** Compile student-facing versions (public) or instructor-facing materials (with solutions/rubrics and other sensitive materials) via the `instructor` profile. 
 + **Accessibility:** Easily build HTML and PDF versions of course materials, or invoke [`axe-core`](https://github.com/dequelabs/axe-core) to assess WCAG standards. 
++ **Equation Copying:** HTML code is modified to allow highlight and copying of text containing inline MathJax formulas, automatically parsing the $\LaTeX$ code into the clipboard.
 + **Automated Builds & Chopping:** A centralized script (`build.sh`) manages rendering via Quarto and invoking a python tool (`chopper.py`) that slices master PDFs into individual files.
 + **Unified Cross-References:** Because the project is built around a single book, from which working materials are excised, cross-references (to Theorems, Exercises, etc.) across documents are possible!
 
@@ -82,9 +83,11 @@ Note that the script displays the Quarto command it runs, in case you prefer to 
     + `build.sh`: The script containing several common build commands.
     + `.scripts/`: A hidden folder for typesetting logic scripts.
         + `chopper.py`: Slices the compiled master PDF into individual files for student use.
+        + `mathjax-copy.html`: Allows normal mouse selection to copy MathJax tags to the clipboard along with the text around it.
         + `*.lua`:  Pandoc filters that handle formatting, exam logic, and autonumbering.
     + `_quarto-accessible.yml`: Allows the use of `axe-core` for live accessibility audits.
     + `before-title.tex`: Part of the [current solution](https://github.com/orgs/quarto-dev/discussions/12838) to global TeX macros for Quarto books.
+    + `robots.txt`: Prevents major AI web crawlers from scraping published course materials for training data.
     + `favicon.ico`: Replace this with your own personal branding!
 
 ### Deployment
