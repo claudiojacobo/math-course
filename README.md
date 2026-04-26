@@ -35,7 +35,7 @@ brew install --cask mactex-no-gui
 
 After cloning the repo, configure the `_quarto.yml` and `_variables.yml` files with your relevant course information, and be sure to set the `export-dir` variable to your desired output folder. 
 
-Next, run `./build.sh` and view the resulting PDFs in `_instructor` and the directory you just specified to ensure all packages are properly configured. Review the auto-generated syllabus to ensure your information is thoroughly populated, then implement your own course policies!
+Next, run `./build.sh` and view the resulting PDFs in `_instructor` in the directory you specified to ensure all packages are properly configured. Review the auto-generated syllabus to ensure your information is thoroughly populated, then implement your own course policies!
 
 ### Workflow
 
@@ -84,6 +84,7 @@ Note that the script displays the Quarto command it runs, in case you prefer to 
     + `.scripts/`: A hidden folder for typesetting logic scripts.
         + `chopper.py`: Slices the compiled master PDF into individual files for student use.
         + `mathjax-copy.html`: Allows normal mouse selection to copy MathJax tags to the clipboard along with the text around it.
+        + `clean-tab-title.html`: Strips out the "Appendix" prefix from browser tab labels.
         + `*.lua`:  Pandoc filters that handle formatting, exam logic, and autonumbering.
     + `_quarto-accessible.yml`: Allows the use of `axe-core` for live accessibility audits.
     + `before-title.tex`: Part of the [current solution](https://github.com/orgs/quarto-dev/discussions/12838) to global TeX macros for Quarto books.
@@ -97,3 +98,17 @@ To learn more about publishing the Quarto book to the web, see the official [pub
 ```
 quarto publish netlify
 ```
+
+### On Homework Numbering 
+
+In the sample course ([Math 362](https://math362.cjgg.me)), assignments are due weekly and do not neatly align with sequential textbook chapters. Therefore, they are placed in the `appendices` block of the `_quarto.yml` file. Because of how Quarto handles appendices, the HTML versions of these assignments are automatically labeled alphabetically (e.g., Appendix A, Appendix B). However, in the PDF version of the course, we've chosen to label them numerically (e.g., Homework 0, Homework 1). This divergence is a deliberate design choice to maximize stability and cross-referencing compatibility within Quarto's underlying engine. 
+
+To bridge this gap, this template includes an `auto-numbering.lua` script. When you write `# Homework 0 {.centered-title}` or `# Homework A {.centered-title}` at the top of an assignment, the script automatically parses the identifier and labels the content within as "Exercise 0.1" or "Exercise A.1," respectively, for the PDF output (and, as indicated, centers the titles).
+
+Short of restructuring the book so that assignments exist as standard chapters or subsections, you have three main options for utilizing this template:
+
+1. **Use numerical labeling in PDFs:** Use numerical headers, trusting that students can mentally map 0 ↦ A, 1 ↦ B, and so on, between the PDF and HTML versions.
+2. **Use alphabetical labeling globally:** Title your headers alphabetically (e.g., `# Homework A`) so the PDF and HTML outputs match.
+3. **Disable numbering completely:** Use `# Homework 0 {.unnumbered .centered-title}` to eliminate numbering. **This will prevent you from cross-referencing homework problems** throughout the rest of your book.
+
+While it is possible to force Quarto to visually strip or overwrite these alphabetical prefixes using complex Lua filters or Javascript, we intentionally avoid doing so here to prevent complications in the long-term maintenance of this project.
