@@ -7,12 +7,6 @@ include-in-header:
         --clean-title: "Syllabus";
       }
       </style>
-      <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        // Scrubs "Appendix A - " (or any similar pattern) from the browser tab
-        document.title = document.title.replace(/Appendix [A-Z]+\s*[-—]\s*/, "");
-      });
-      </script>
 ---
 
 # Syllabus {.centered-title}

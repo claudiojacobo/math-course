@@ -45,6 +45,7 @@ format:
     html-math-method: mathjax
     include-in-header:
       - .scripts/mathjax-copy.html
+      - .scripts/clean-tab-title.html
     respect-user-color-scheme: true
     theme:
       light: flatly
