@@ -1,6 +1,8 @@
 ::: {.content-visible when-format="pdf"}
 ```{=latex}
-    \newcounter{SavedSecNumDepth}
+    \makeatletter
+    \@ifundefined{c@SavedSecNumDepth}{\newcounter{SavedSecNumDepth}}{}
+    \makeatother
     \setcounter{SavedSecNumDepth}{\value{secnumdepth}}
     \setcounter{secnumdepth}{0}
 
